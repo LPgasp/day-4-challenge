@@ -1,0 +1,109 @@
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  background: #ffd1c3;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+}
+
+.circle-one {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: #88a9f0;
+  z-index: 5;
+  border-radius: 50%;
+  box-shadow: 1px 2px 20px 0px rgba(0, 0, 0, 0.3);
+  animation: grown-1 5s ease infinite;
+}
+
+.circle-two {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  background: #bb77b8;
+  z-index: 5;
+  border-radius: 50%;
+  box-shadow: 1px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  animation: grown-2 5s ease infinite;
+}
+
+.circle-three {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: #be485c;
+  z-index: 5;
+  border-radius: 50%;
+  box-shadow: 1px 8px 20px 0 rgba(0, 0, 0, 0.5);
+  animation: grown-3 5s ease infinite;
+}
+
+@keyframes grown-1 {
+  0% {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+  70% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+}
+
+@keyframes grown-2 {
+  0% {
+    transform: scale(0);
+    transform-origin: 0;
+    transform-origin: center center;
+  }
+  50% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+}
+
+@keyframes grown-3 {
+  0% {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+  30% {
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  100% {
+    transform: scale(0);
+    transform-origin: center center;
+  }
+}
